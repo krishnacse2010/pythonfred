@@ -18,8 +18,7 @@ def encode(digits, digit_map):
     # characters as the max number in digits
     if max(digits) >= len(digit_map):
         raise ValueError("digit_map is not long enough to encode digits")
-    else:
-        pass
+   
     # we'll see this later, but the following would be better:
     encoding = ''.join([digit_map[d] for d in digits])
     return encoding
